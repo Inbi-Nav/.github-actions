@@ -18,7 +18,6 @@ jobs:
         run: |
           echo "Usuari: ${{ secrets.PROD_USER }}"
           echo "Servidor: ${{ secrets.PROD_HOST }}"
-
       - name:  Pujar fitxers via SCP
         run: |
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/deploy_key.pem
